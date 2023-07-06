@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fonts/Roboto.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__null left-side"></div>
+      <div class="header__nav main-side">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link purple">Личный кабинет</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link forest-green">Раздел1</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link picton-blue">Раздел2</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link trinidad">Раздел3</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link mine-shaft">Раздел4</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="#" class="header__link milano-red">Раздел5</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section__advantages">
+      <div class="container">
+        <div class="advantages__info left-side">
+          <p class="advantages__descr">
+            *TutuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.
+          </p>
+          <p class="advantages__descr">
+            Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми.
+            Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц.
+            А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру
+          </p>
+        </div>
+        <div class="advantages__flex main-side">
+          <div class="advantages__form">
+            <h1 class="visually-hidden"></h1>
+            <div class="advantages__block">
+              <h2 class="advantages__title">Заполните форму</h2>
+              <div class="advantages__steps">
+                <div class="vida-loca">1</div>
+                <div class="vida-loca">2</div>
+                <div class="citrus">3</div>
+                <div class="">4</div>
+                <div class="">5</div>
+              </div>
+            </div>
+            <div class="advantages__choice">
+              <p class="advantages__description advantages__before">Общая информация</p>
+            </div>
+            <form action="https://www.mcart.ru/" method="POST" class="form">
+              <div class="form__input">
+                <div class="form__input-block">
+                  <label class="checkbox-custom">
+                    <p class="form-descr">Фамилия</p>
+                    <input class="form__input-surname" type="text" required="">
+                  </label>
+                </div>
+                <div class="form__input-block">
+                  <p class="form-descr">Имя</p>
+                  <input class="form__input-name" type="text" required="">
+                </div>
+                <div class="form__input-block">
+                  <p class="form-descr">Отчество</p>
+                  <input class="form__input-patronymic" type="text" required="">
+                </div>
+              </div>
+              <div class="form__input">
+                <div class="form__input-block">
+                  <p class="form-descr">Меняли фамилию?</p>
+                  <div class="form__choice">
+                    <input type="radio" name="checkbox-surname" id="checkbox-surname1" class="checkbox-custom__input">
+                    <label for="checkbox-surname1" class="form__checkbox-custom">Да</label>
+                    <input type="radio" name="checkbox-surname" checked="checked" id="checkbox-surname2" class="checkbox-custom__input">
+                    <label for="checkbox-surname2" class="form__checkbox-custom">Нет</label>
+                  </div>
+                </div>
+                <div class="form__input-block">
+                  <p class="form-descr">Пол</p>
+                  <div class="form__choice">
+                    <input type="radio" name="checkbox-gender" checked="checked" id="checkbox-gender1" class="checkbox-custom__input">
+                    <label for="checkbox-gender1" class="form__checkbox-custom">Муж</label>
+                    <input type="radio" name="checkbox-gender" id="checkbox-gender2" class="checkbox-custom__input">
+                    <label for="checkbox-gender2" class="form__checkbox-custom">Жен</label>
+                  </div>
+                </div>
+                <div class="form__input-block">
+                  <p class="form-descr">Семейное положение</p>
+                  <select name="type-wedding-status" class="form-select">
+                    <option value="1" selected="">Холост</option>
+                    <option value="2" selected="">Женат/Замужем</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__input">
+                <div class="form__input-block">
+                  <p class="form-descr">
+                    Гражданство
+                  </p>
+                  <select name="country" class="form-select">
+                    <option value="1" selected="">Российская Федерация</option>
+                  </select>
+                </div>
+                <div class="form__input-block date-birth">
+                  <div class="form-input">
+                    <p class="form-descr">
+                      Дата рождения
+                    </p>
+                    <select name="birthday" id="birthday" class="form-select">
+                    </select>
+                    <select name="month" id="month" class="form-select">
+                    </select>
+                    <select name="year" id="year" class="form-select">
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form__input">
+                <div class="form__input-block place-birth">
+                  <p class="form-descr">
+                    Место рождения
+                  </p>
+                  <input class="input-search" type="search" name="text" required="">
+                  <p class="advantages__description">Например, Россия, Комсомольск-на-Амуре</p>
+                </div>
+              </div>
+              <div class="form__input form__input-bg">
+                <div class="form__input-block form__input-btn">
+                  <button class="form__button form__button-left">
+                    <svg class="arrow-left" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                      width="20px" height="15px" viewBox="0 0 512.000000 512.000000"
+                      preserveAspectRatio="xMidYMid meet">
+
+                      <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                      fill="#000000" stroke="none">
+                      <path d="M640 2985 l-425 -425 428 -428 427 -427 0 323 0 322 1920 0 1920 0 0
+                      210 0 210 -1920 0 -1920 0 -2 320 -3 320 -425 -425z"/>
+                      </g>
+                    </svg>
+                      Назад
+                  </button>
+                  <button class="form__button form__button-right">
+                    Далее
+                    <svg class="arrow-right" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                      width="20px" height="15px" viewBox="0 0 512.000000 512.000000"
+                      preserveAspectRatio="xMidYMid meet">
+
+                      <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                      fill="#000000" stroke="none">
+                      <path d="M640 2985 l-425 -425 428 -428 427 -427 0 323 0 322 1920 0 1920 0 0
+                      210 0 210 -1920 0 -1920 0 -2 320 -3 320 -425 -425z"/>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/js/scripts.js"></script>
+</body>
+</html>

@@ -346,7 +346,156 @@ input[type="radio"]:checked + label {
   transform: rotate(180deg) translateY(-3px);
 }
 
-.header__null {
-  max-width: 200px;
+/* html star */
+.star {
+  margin-bottom: 50px;
 }
 
+.star__block {
+  display: flex;
+}
+
+.star__block svg {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.star__block svg path{
+  transition: all .3s ease-in-out;
+  fill: #8b8b8b;
+}
+
+.star__block svg:hover path,
+.star__element.active path{
+  fill: #f7be33;
+}
+
+/* html progress-bar */
+.section__progress-bar {
+  margin-bottom: 50px;
+}
+
+.progress {
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 20px;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  transition: width 0.5s ease-in-out;
+}
+
+.progress-bar__descr {
+  text-align: center;
+}
+
+
+/* html btn */
+.btn-orange {
+  background: #FF9900;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  display: inline-block;
+  padding: 20px 38px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn-orange:hover {
+  background: #F7B045;
+}
+
+.btn-orange:focus {
+  background: #F7B045;
+}
+
+.btn-orange:active {
+  background: #E1670E;
+}
+
+.btn_transparent {
+  background: transparent;
+  border: 1px solid #333333;
+  color: #333333;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  border-radius: 16px;
+  display: inline-block;
+  padding: 20px 38px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.btn_transparent:hover {
+  background: #666666;
+  color: #FFFFFF;
+}
+
+.btn_transparent:focus {
+  color: #FFFFFF;
+  background: #666666;
+}
+
+.btn_transparent:active {
+  color: #FFFFFF;
+  background: #000000;
+}
+
+
+.btn-about {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F7B045;
+  border: 3px solid #FF9900;
+  background: transparent;
+  padding: 20px 38px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.btn-about:hover {
+  background: #FF9900;
+}
+
+.btn-about:focus {
+  background: #FF9900;
+}
+
+.btn-about:active {
+  background: #E1670E;
+  border: 3px solid #E1670E;
+}
+
+
+.big {
+  padding: 20px 94px;
+  font-size: 25px;
+  display: block;
+}
+
+.normal {
+  padding: 20px 38px;
+  font-size: 16px;
+  display: block;
+}
+
+.small {
+  padding: 14px 24px;
+  font-size: 12px;
+  display: block;
+}
